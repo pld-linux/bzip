@@ -45,13 +45,12 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install bzip ${RPM_BUILD_ROOT}%{_bindir}
 install bzip.1 ${RPM_BUILD_ROOT}%{_mandir}/man1
 ln -sf bzip ${RPM_BUILD_ROOT}%{_bindir}/bunzip
-gzip -9nf ALGORITHMS README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {ALGORITHMS,README}.gz
+%doc ALGORITHMS README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
