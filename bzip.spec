@@ -3,7 +3,7 @@ Summary(pl):	Skuteczny program kompresuj±cy
 Name:		bzip
 Version:	0.21
 Release:	4
-Source0:	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/%{name}-%{version}.tar.gz
+Source0:	ftp://custom.lab.unb.br/pub/compression/bzip/%{name}-%{version}.tar.gz
 License:	GPL, but see description for restrictions
 Group:		Applications/Archiving
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
