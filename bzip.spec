@@ -38,7 +38,7 @@ na stronê http://www.lpf.org/ .
 %setup -q
 
 %build
-%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -fomit-frame-pointer"
+%{__make} CFLAGS="%{rpmcflags} -fomit-frame-pointer"
 
 %install
 rm -rf $RPM_BUILD_ROOT
