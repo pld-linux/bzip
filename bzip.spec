@@ -3,13 +3,13 @@ Summary(pl):	Skuteczny program kompresuj±cy
 Name:		bzip
 Version:	0.21
 Release:	4
-Source0:	ftp://custom.lab.unb.br/pub/compression/bzip/%{name}-%{version}.tar.gz
-# Source0-md5:	03a7fe24ced5ac4401a32092409c78be
 License:	GPL, but see description for restrictions
 Group:		Applications/Archiving
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Source0:	ftp://custom.lab.unb.br/pub/compression/bzip/%{name}-%{version}.tar.gz
+# Source0-md5:	03a7fe24ced5ac4401a32092409c78be
 Obsoletes:	bzip-man
 Obsoletes:	bzip-man-gz
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 bzip is a compression program which uses some wild new `block sorting
@@ -37,7 +37,8 @@ na stronê http://www.lpf.org/ .
 %setup -q
 
 %build
-%{__make} CFLAGS="%{rpmcflags} -fomit-frame-pointer"
+%{__make} \
+	CFLAGS="%{rpmcflags} -fomit-frame-pointer"
 
 %install
 rm -rf $RPM_BUILD_ROOT
