@@ -41,8 +41,8 @@ na stronê http://www.lpf.org/ .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+
 install bzip ${RPM_BUILD_ROOT}%{_bindir}
 install bzip.1 ${RPM_BUILD_ROOT}%{_mandir}/man1
 ln -sf bzip ${RPM_BUILD_ROOT}%{_bindir}/bunzip
