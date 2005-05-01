@@ -31,7 +31,7 @@ czasem nawet do 30%. Jednak na kodowanie arytmetyczne obowi±zuje
 patent w niektórych krajach (np. w USA).
 
 Je¿eli chcesz zrobiæ co¶ z problemem patentowania algorytmów, zajrzyj
-na stronê http://www.lpf.org/ .
+na stronê <http://www.lpf.org/>.
 
 %prep
 %setup -q
