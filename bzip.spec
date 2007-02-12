@@ -1,5 +1,5 @@
 Summary:	Efficient compression program
-Summary(pl):	Skuteczny program kompresuj±cy
+Summary(pl.UTF-8):   Skuteczny program kompresujÄ…cy
 Name:		bzip
 Version:	0.21
 Release:	4
@@ -24,14 +24,14 @@ If you want to do something about the problem of Algorithm patents,
 contact the League for Programming Freedom to see what you can do to
 help. http://www.lpf.org/
 
-%description -l pl
-bzip jest programem kompresuj±cym u¿ywaj±cym algorytmu sortowania
+%description -l pl.UTF-8
+bzip jest programem kompresujÄ…cym uÅ¼ywajÄ…cym algorytmu sortowania
 blokowego wraz z kodowaniem arytmetycznym. Kompresuje lepiej od gzipa,
-czasem nawet do 30%. Jednak na kodowanie arytmetyczne obowi±zuje
-patent w niektórych krajach (np. w USA).
+czasem nawet do 30%. Jednak na kodowanie arytmetyczne obowiÄ…zuje
+patent w niektÃ³rych krajach (np. w USA).
 
-Je¿eli chcesz zrobiæ co¶ z problemem patentowania algorytmów, zajrzyj
-na stronê <http://www.lpf.org/>.
+JeÅ¼eli chcesz zrobiÄ‡ coÅ› z problemem patentowania algorytmÃ³w, zajrzyj
+na stronÄ™ <http://www.lpf.org/>.
 
 %prep
 %setup -q
