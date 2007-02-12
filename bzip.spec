@@ -1,5 +1,5 @@
 Summary:	Efficient compression program
-Summary(pl.UTF-8):   Skuteczny program kompresujący
+Summary(pl.UTF-8):	Skuteczny program kompresujący
 Name:		bzip
 Version:	0.21
 Release:	4
