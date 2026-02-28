@@ -2,7 +2,7 @@ Summary:	Efficient compression program
 Summary(pl.UTF-8):	Skuteczny program kompresujący
 Name:		bzip
 Version:	0.21
-Release:	5
+Release:	6
 License:	GPL, but see description for restrictions
 Group:		Applications/Archiving
 Source0:	ftp://custom.lab.unb.br/pub/compression/bzip/%{name}-%{version}.tar.gz
