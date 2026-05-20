@@ -2,11 +2,12 @@ Summary:	Efficient compression program
 Summary(pl.UTF-8):	Skuteczny program kompresujący
 Name:		bzip
 Version:	0.21
-Release:	6
+Release:	7
 License:	GPL, but see description for restrictions
 Group:		Applications/Archiving
 Source0:	ftp://custom.lab.unb.br/pub/compression/bzip/%{name}-%{version}.tar.gz
 # Source0-md5:	03a7fe24ced5ac4401a32092409c78be
+Patch0:		%{name}-signal-handler.patch
 Obsoletes:	bzip-man
 Obsoletes:	bzip-man-gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,10 +36,11 @@ na stronę <http://www.lpf.org/>.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 %{__make} \
-	CFLAGS="%{rpmcflags} -fomit-frame-pointer"
+	CFLAGS="%{rpmcppflags} %{rpmcflags} -fomit-frame-pointer"
 
 %install
 rm -rf $RPM_BUILD_ROOT

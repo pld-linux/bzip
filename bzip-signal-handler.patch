@@ -1,0 +1,22 @@
+Signal handlers must take int, not int*; modern GCC errors via
+-Werror=incompatible-pointer-types instead of warning.
+--- bzip-0.21/bzip.c.orig
++++ bzip-0.21/bzip.c
+@@ -2578,7 +2578,7 @@
+ 
+ 
+ /*---------------------------------------------*/
+-void mySignalCatcher ( IntNative *n )
++void mySignalCatcher ( IntNative n )
+ {
+    fprintf ( stderr, 
+              "\n%s: Control-C (or similar) caught, quitting.\n",
+@@ -2588,7 +2588,7 @@
+ 
+ 
+ /*---------------------------------------------*/
+-void mySIGSEGVorSIGBUScatcher ( IntNative *n )
++void mySIGSEGVorSIGBUScatcher ( IntNative n )
+ {
+    if (compressing)
+       fprintf ( stderr,
